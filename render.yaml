@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: student-management
+    env: node
+    plan: free
+    region: oregon
+    rootDir: backend
+    buildCommand: npm install
+    startCommand: npm start
+    routes:
+      - type: rewrite
+        source: /*
+        destination: /index.html
