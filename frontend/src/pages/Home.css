@@ -1,0 +1,125 @@
+/* === Navbar Styles === */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(135deg, #8458B3, #d0bdf4);
+  padding: 1rem 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  border-bottom: 2px solid #e5eaf5;
+}
+
+.navbar-brand a {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #ffffff;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.navbar-links a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 500;
+  position: relative;
+}
+
+.navbar-links a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: -3px;
+  left: 0;
+  background-color: navy; /* 🛠 Changed underline to navy */
+  transition: width 0.3s;
+}
+
+.navbar-links a:hover::after {
+  width: 100%;
+}
+
+.navbar-links a:hover {
+  color: navy; /* 🛠 When hovered, text color navy */
+}
+
+/* === Dashboard Styles === */
+.dashboard {
+  padding: 20px;
+}
+
+.dashboard h2 {
+  color: #8458B3; /* Purple Pain */
+}
+
+.dashboard-cards {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.card {
+  background-color: #ffffff;
+  padding: 20px;
+  border-left: 5px solid #8458B3; /* Purple Pain */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  flex: 1 1 200px;
+  border-radius: 8px;
+}
+
+.card h3 {
+  margin: 0 0 10px 0;
+  color: #4B0082; /* Medium Purple */
+}
+
+.card p {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0;
+  color: #5D3FD3; /* Custom Purple Shade */
+}
+
+.card button {
+  background-color: #8458B3;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.card button:hover {
+  background-color: #6a479e;
+}
+
+/* === Table Styles === */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #e0d7f3;
+  padding: 12px;
+  text-align: left;
+}
+
+th {
+  background-color: #e5eaf5; /* Freeze Purple */
+  color: #8458B3;
+}
+
+td button {
+  margin-right: 10px;
+}

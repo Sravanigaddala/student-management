@@ -1,0 +1,67 @@
+/* Form.css - Stylish Updated Version */
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #e5eaf5, #d0bdf4, #a0d2eb);
+  background-size: 400% 400%;
+  animation: gradientAnimation 15s ease infinite;
+  min-height: 100vh;
+}
+
+@keyframes gradientAnimation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.form-container {
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.8);
+  max-width: 400px;
+  margin: 3rem auto;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  backdrop-filter: blur(10px);
+}
+
+.form-container h2 {
+  color: #8458B3;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  margin-bottom: 15px;
+  padding: 12px;
+  font-size: 1rem;
+  border: 2px solid #d0bdf4;
+  border-radius: 10px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+input:focus {
+  border-color: #8458B3;
+}
+
+button {
+  padding: 12px;
+  background-color: #d0bdf4;
+  color: #8458B3;
+  border: none;
+  border-radius: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+  background-color: #a0d2eb;
+  transform: scale(1.05);
+}
