@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 // Use environment variable or default to localhost for local development
-const API_URL = '/students';
+const API_URL = 'https://student-management-f897.onrender.com/students';
 
 export const getStudents = () => axios.get(API_URL);
 
